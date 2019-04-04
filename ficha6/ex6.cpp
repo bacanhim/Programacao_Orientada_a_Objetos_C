@@ -10,8 +10,14 @@ main (){
         int val;
         cout<<"Introduza o valor: \n";
         cin>>val;
+        if(val>100){
+            cout<<"Numero invalido";
+        }
+        else
+        {
         soma+=val;
-        cont+=1;
+        cont+=1;            
+        }
     }
     int media = soma / cont;
     cout<<"A media e "<<media<< "\n";
