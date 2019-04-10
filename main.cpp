@@ -1,22 +1,27 @@
-#include <iostream>
+#include <cstdio>
 #include <stdio.h>
-#include <cstring>
+#include <iostream>
+#include <cstdlib>
 using namespace std;
-main(){
-    int v [7] ={1,2,3,4,5,6,7};
-    int *p = v;
-    int i;
-    cout << *p++ <<"\n";
-    cout << *(p+2) <<"\n";
-    cout << * ++p <<"\n";
-    cout << * (p+4) <<"\n";
-    *p++;
-    cout << *  (p-3)<<"\n";
-    *p++;
 
-    for (i =-4; i<2;i++){
-        cout<<*(p+i)<<",";   
-    }
-    cout << *(p+i) <<".";
-        system("PAUSE");
+int divisao(int x, int y){
+	int divi;
+	divi=x/y;
+    return divi;
+}
+int resto_div(int x, int y){
+	int resto;
+	resto=x % y;
+    return resto;
+}
+
+main (){
+	int x,y;
+	cout<<"Introduza um valor\n";
+	cin>>x;
+	cout<<"Introduza um valor\n";
+	cin>>y;
+	cout<<"Resultado da divisao: "<<divisao(x,y)<<"\n";
+	cout<<"Resto da divisao: "<<resto_div<<"\n";
+	system("pause");
 }
