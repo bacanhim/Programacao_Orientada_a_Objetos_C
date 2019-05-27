@@ -3,7 +3,7 @@ using namespace std;
 main() {
     double divida;
     int notas,somanotas=0;
-    cout << "CAIXA DE PAGAMENTO\n\nSo sao aceites notas!! <5, 10, 20, 50, 100, 200 e 500 euros>: \n\n";
+    cout << "\t\t\tCAIXA DE PAGAMENTO\n\n\tSo sao aceites notas!! <5, 10, 20, 50, 100, 200 e 500 euros>: \n\n";
     cout << "Introduza um valor em divida: ";
     cin >> divida;
     while (somanotas<divida){ //Verificacao de valor introduzido em relacao a divida em curso
