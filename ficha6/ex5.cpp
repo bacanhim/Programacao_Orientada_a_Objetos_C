@@ -4,11 +4,11 @@
 #include <string>
 using namespace std;
 main (){
-    char val;
+    int val;
     cout<<"Introduza o carater";
     cin>>val;
     if (((val>='a')&&(val<='z'))||((val>='A') && (val<='Z'))){
-        cout<<"LETRA\n";
+        cout<<"Entrada invalida\n";
     }
     else if ((val>='0')&&(val<='9')){
         cout<<"NUMERO\n";
